@@ -68,10 +68,7 @@ chmod 600 $key
 }
 
 function start(){
-#service tor start
-#sleep 5
 ncat --broker --listen --ssl --ssl-cert $crt --ssl-key $key $host $port
-sleep 30
 }
 
 
